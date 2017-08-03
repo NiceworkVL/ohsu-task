@@ -15,11 +15,6 @@ if ($limit && (!is_numeric($limit)  || $limit < 0)) {
         exit;
 }
 
-// for debugging
-// print "$request<br>";
-// print "$offset<br>";
-// print "$limit<br>";
-
 if ($request == 'person') {
    $file = $request.".csv";
 } elseif ($request == 'item') {
